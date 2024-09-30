@@ -43,7 +43,7 @@ class AnnalynsInfiltration
     }
 }
 
-// Example Test Cases
+// Example Test Cases 
 $infiltration = new AnnalynsInfiltration();
 
 // Expected false (Both knight and archer awake)
@@ -78,3 +78,5 @@ var_dump($infiltration->canLiberate(true, true, false, false)); // => false
 
 // Expected true (All asleep but dog present)
 var_dump($infiltration->canLiberate(false, false, false, true)); // => true
+
+?>
