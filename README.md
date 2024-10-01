@@ -14,16 +14,16 @@
 
 ## ![SECTION About this Repository](https://img.shields.io/badge/❔-About%20this%20Repository-%2300416a?logoColor=white&labelColor=%2300416a&color=%2324292e&textColor=white)
 
-In order to provide a steady stream of coding challenges that can help sharpen my skills in programming, I singned up to some coding challenges portals and created this repo to save my progress/activities.
+In order to provide a steady stream of coding challenges that can help sharpen my skills in programming, I signed up to some coding challenges portals and created this repo to save my progress/activities.
 
 ## ![SECTION Documentation](https://img.shields.io/badge/📚-Documentation-%2300416a?logoColor=white&labelColor=%2300416a&color=%2324292e&textColor=white)
 At the moment, I'm taking the following programming challenges tracks:
-| Portal | PL | Directory in this Repo | Traack |
+| Portal | PL | Directory in this Repo | Track |
 | ------------- | ------------- | ------------- | ------------- |
 | Exercism.org | PHP | `Exercism.org - PHP` | 7 of 114 |
 
 > [!NOTE]
-> I will always create an issue ticket with the programming challenge link info to keep track of my progress here at GitHub.
+> When I'm about to start with a challenge, I will always create an issue ticket with the programming challenge link info to keep track of my progress here at GitHub.
 
 For those who are curious, you can view my profile and progress here:
 
