@@ -20,7 +20,7 @@ In order to provide a steady stream of coding challenges that can help sharpen m
 At the moment, I'm taking the following programming challenges tracks:
 | Portal | PL | Directory in this Repo | Track |
 | ------------- | ------------- | ------------- | ------------- |
-| Exercism.org | PHP | `Exercism.org - PHP` | 9 of 114 |
+| Exercism.org | PHP | `Exercism.org - PHP` | 10 of 114 |
 
 > [!NOTE]
 > When I'm about to start with a challenge, I will always create an issue ticket with the programming challenge link info to keep track of my progress here at GitHub.
