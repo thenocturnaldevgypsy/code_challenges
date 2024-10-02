@@ -15,6 +15,6 @@ Desktop.ini
 # Ignore all .code-workspace files
 *.code-workspace
 
-# Ignore backup folder and files (if needed)
-# backup/
-# backup/*
+# Ignore backup folder and files (if applicable)
+backup/
+backup/*
