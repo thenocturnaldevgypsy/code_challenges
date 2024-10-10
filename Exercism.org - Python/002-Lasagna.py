@@ -1,35 +1,54 @@
-class Lasagna:
-    
-    # Constant for the expected total cooking time
-    EXPECTED_COOK_TIME = 40  # 40 minutes is the expected cook time
-    
-    # Method to return the expected cook time (in minutes)
-    def expected_cook_time(self):
-        return self.EXPECTED_COOK_TIME
+"""
+Functions used in preparing Guido's gorgeous lasagna.
 
-    # Method to calculate the remaining cook time based on elapsed minutes in the oven
-    def remaining_cook_time(self, elapsed_minutes):
-        return self.EXPECTED_COOK_TIME - elapsed_minutes
+Learn about Guido, the creator of the Python language:
+https://en.wikipedia.org/wiki/Guido_van_Rossum
 
-    # Method to calculate the total preparation time, assuming 2 minutes per layer
-    def total_preparation_time(self, layers_to_prep):
-        return layers_to_prep * 2
+This is a module docstring, used to describe the functionality
+of a module and its functions and/or classes.
+"""
 
-    # Method to calculate the total elapsed time (preparation + oven time)
-    def total_elapsed_time(self, layers_to_prep, elapsed_minutes):
-        return self.total_preparation_time(layers_to_prep) + elapsed_minutes
+# 1. Define the 'EXPECTED_BAKE_TIME' constant
+EXPECTED_BAKE_TIME = 40  # Lasagna should bake for 40 minutes
 
-    # Method to return a string "Ding!" for when the lasagna is done
-    def alarm(self):
-        return "Ding!"
+# 2. Implement the 'bake_time_remaining()' function
+def bake_time_remaining(elapsed_bake_time: int) -> int:
+    """
+    Calculate the bake time remaining.
 
+    :param elapsed_bake_time: int - baking time already elapsed.
+    :return: int - remaining bake time (in minutes) derived from 'EXPECTED_BAKE_TIME'.
 
-# Creating an instance of the Lasagna class
-lasagna = Lasagna()
+    This function takes the actual minutes the lasagna has been in the oven as
+    an argument and returns how many minutes the lasagna still needs to bake
+    based on the EXPECTED_BAKE_TIME.
+    """
+    return EXPECTED_BAKE_TIME - elapsed_bake_time
 
-# Calling methods from the Lasagna class and printing their outputs
-print(lasagna.expected_cook_time())  # Output: 40
-print(lasagna.remaining_cook_time(30))  # Output: 10
-print(lasagna.total_preparation_time(3))  # Output: 6 (3 layers * 2 minutes per layer)
-print(lasagna.total_elapsed_time(3, 20))  # Output: 26 (6 minutes prep + 20 minutes baking)
-print(lasagna.alarm())  # Output: Ding!
+# 3. Implement the 'preparation_time_in_minutes()' function
+def preparation_time_in_minutes(number_of_layers: int) -> int:
+    """
+    Calculate the preparation time based on the number of layers.
+
+    :param number_of_layers: int - the number of layers to be added.
+    :return: int - total preparation time (in minutes), assuming each layer takes 2 minutes.
+
+    This function calculates the preparation time for the lasagna, assuming each layer
+    takes 2 minutes to prepare.
+    """
+    PREPARATION_TIME = 2  # 2 minutes per layer
+    return number_of_layers * PREPARATION_TIME
+
+# 4. Implement the 'elapsed_time_in_minutes()' function
+def elapsed_time_in_minutes(number_of_layers: int, elapsed_bake_time: int) -> int:
+    """
+    Calculate the total elapsed cooking time (preparation + bake time).
+
+    :param number_of_layers: int - the number of layers in the lasagna.
+    :param elapsed_bake_time: int - the baking time already elapsed.
+    :return: int - total elapsed time (in minutes) spent preparing and cooking.
+
+    This function calculates the total elapsed time by adding the preparation time
+    (based on the number of layers) and the baking time that has already elapsed.
+    """
+    return preparation_time_in_minutes(number_of_layers) + elapsed_bake_time
